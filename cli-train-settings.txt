@@ -1,0 +1,12 @@
+#Comments MUST be on a line starting by the # character.
+
+#Reduce VRAM consumption, but slightly slow down training.
+--data_device cpu
+
+#How many iterations to train the scene (diminishing returns, default is 30000)
+--iterations 60000
+# don't forget to save when reaching your desired max number of iterations!
+--save_iterations 3000 6000 12000 15000 18000 21000 24000 26000 28000 30000 32000 34000 36000 38000 40000 42000 44000 46000 48000 50000 52000 54000 55000 56000 58000 60000
+
+#If provided 1, 2, 4 or 8, uses original, 1/2, 1/4 or 1/8 resolution
+#--resolution 4
